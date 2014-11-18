@@ -40,6 +40,8 @@
 # application settings that are stored in resourced.
 DEVICE_PACKAGE_OVERLAYS := device/samsung/fascinatemtd/overlay
 
+PRODUCT_CHARACTERISTICS := 
+
 # ramdisk files
 PRODUCT_COPY_FILES += \
 	device/samsung/fascinatemtd/init.aries.rc:root/init.aries.rc \
