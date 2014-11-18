@@ -1,46 +1,16 @@
-## radio
+# GPS
+etc/gps.conf
+lib/hw/gps.aries.so
+vendor/bin/gpsd
+
+# Radio
+bin/pppd_runner
+bin/rild
 lib/libril.so
 lib/libsecril-client.so
 lib/libsec-ril40.so
-bin/rild
-bin/pppd_runner
 
-## gps
-vendor/bin/gpsd
-etc/gps.conf
-lib/hw/gps.aries.so
-
-## sensors
-vendor/lib/libsensor_yamaha_test.so
+# Sensors
 vendor/bin/geomagneticd
 vendor/bin/orientationd
-
-## firmwares
-vendor/firmware/bcm4329.hcd
-vendor/firmware/nvram_net.txt
-vendor/firmware/cypress-touchkey.bin
-vendor/firmware/samsung_mfc_fw.bin
-
-## gfx
-vendor/bin/pvrsrvinit
-vendor/lib/egl/libEGL_POWERVR_SGX540_120.so
-vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so
-vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
-vendor/lib/hw/gralloc.aries.so
-vendor/lib/libglslcompiler.so
-vendor/lib/libIMGegl.so
-vendor/lib/libpvr2d.so
-vendor/lib/libpvrANDROID_WSEGL.so
-vendor/lib/libPVRScopeServices.so
-vendor/lib/libsrv_init.so
-vendor/lib/libsrv_um.so
-vendor/lib/libusc.so
-
-## tvout
-lib/lib_tvoutengine.so
-lib/libtvout.so
-lib/libtvout_jni.so
-lib/libtvoutfimc.so
-lib/libtvouthdmi.so
-lib/libtvoutservice.so
-bin/tvoutserver
+vendor/lib/libsensor_yamaha_test.so
