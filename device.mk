@@ -38,6 +38,7 @@
 # These are the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
+DEVICE_PACKAGE_OVERLAYS := device/samsung/fascinatemtd/overlay
 
 # ramdisk files
 PRODUCT_COPY_FILES += \
@@ -80,6 +81,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
        mobiledata.interfaces=ppp0 \
        ro.ril.samsung_cdma=true \
        ro.telephony.ril.v3=datacall
+
+# Verizon cdma stuff
+PRODUCT_PROPERTY_OVERRIDES += \
+       ro.cdma.home.operator.numeric=310004 \
+       ro.cdma.home.operator.alpha=Verizon \
+       net.cdma.pppd.user=user[SPACE]VerizonWireless
 
 # decoy recovery kernel
 PRODUCT_COPY_FILES += \

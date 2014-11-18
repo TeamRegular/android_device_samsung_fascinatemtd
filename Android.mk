@@ -14,22 +14,9 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter fascinatemtd mesmerizemtd showcasemtd, $(TARGET_DEVICE)),)
-
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := $(LOCAL_PATH)/../aries-common/s3c-keypad.kcm
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_KEY_CHAR_MAP)
-
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := $(LOCAL_PATH)/../aries-common/cypress-touchkey.kcm
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_KEY_CHAR_MAP)
-
-ifneq ($(TARGET_SIMULATOR),true)
+ifeq ($(TARGET_DEVICE),fascinatemtd)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
-
 endif
 
 

@@ -23,6 +23,8 @@
 # inherit from aries-common
 -include device/samsung/aries-common/BoardConfigCommon.mk
 
+TARGET_OTA_ASSERT_DEVICE := aries,fascinate,fascinatemtd,SCH-I500
+
 BOARD_MOBILEDATA_INTERFACE_NAME := "ppp0"
 
 # Releasetools
