@@ -245,7 +245,7 @@ service aries-ril-daemon /system/bin/rild
     group radio cache inet misc audio log
 
 # 3D init
-service pvrsrvinit /system/vendor/bin/pvrsrvinit
+service pvrsrvinit /system/bin/pvrsrvinit
     class core
     user root
     group root

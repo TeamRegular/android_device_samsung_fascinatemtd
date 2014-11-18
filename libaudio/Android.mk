@@ -1,4 +1,4 @@
-ifneq ($(filter fascinatemtd mesmerizemtd showcasemtd, $(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),fascinatemtd)
 
 LOCAL_PATH:= $(call my-dir)
 
@@ -7,7 +7,7 @@ LOCAL_SRC_FILES:= \
 	AudioHardware.cpp
 
 LOCAL_MODULE := audio.primary.aries
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
+LOCAL_MODULE_RELATIVE_PATH:= hw
 LOCAL_STATIC_LIBRARIES:= libmedia_helper
 LOCAL_SHARED_LIBRARIES:= \
 	liblog \

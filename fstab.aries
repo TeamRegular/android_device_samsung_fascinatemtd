@@ -15,7 +15,7 @@ datadata                    /datadata           yaffs2      defaults            
 /dev/block/mmcblk0p3       /cache                ext4      noatime,nodev,nosuid,nomblk_io_submit,errors=panic   wait
 
 # sdcard
-/devices/platform/s3c-sdhci.2/mmc_host/mmc2 auto auto defaults voldmanaged=sdcard0:auto
+/devices/platform/s3c-sdhci.2/mmc_host/mmc2* auto auto defaults voldmanaged=sdcard0:auto
 
 # zRAM
 /dev/block/zram0            none                swap        defaults                                            zramsize=134217728

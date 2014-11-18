@@ -45,7 +45,6 @@ PRODUCT_CHARACTERISTICS :=
 # ramdisk files
 PRODUCT_COPY_FILES += \
 	device/samsung/fascinatemtd/init.aries.rc:root/init.aries.rc \
-	device/samsung/fascinatemtd/fstab.aries:root/fstab.aries \
 
 # hak
 PRODUCT_COPY_FILES += \
